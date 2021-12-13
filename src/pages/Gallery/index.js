@@ -98,14 +98,18 @@ function App() {
     });
   }
 
+  let intervalId = null;
   function setWallpaperIntermittently(imgs, time = DEFAULT_DURATION) {
     let loopCount = 0;
+    if (intervalId) {
+      clearInterval(intervalId);
+    }
 
-    const interval = setInterval(() => {
+    intervalId = setInterval(() => {
       feelLucky(imgs);
       loopCount++;
       if (loopCount > MAX_LOOP_COUNT) {
-        clearInterval(interval);
+        clearInterval(intervalId);
       }
     }, time);
   }

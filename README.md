@@ -1,3 +1,6 @@
+### Pre Install
+- https://tauri.studio/en/docs/getting-started/intro#steps
+
 ### Dev
 ```sh
 npm install
