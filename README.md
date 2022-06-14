@@ -1,5 +1,5 @@
 ### Pre Install
-- https://tauri.studio/en/docs/getting-started/intro#steps
+- https://tauri.studio/v1/guides/getting-started/prerequisites
 
 ### Dev
 ```sh
